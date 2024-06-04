@@ -21,7 +21,7 @@ Just unzip with 7zip-zstd and run.
 
 6. If you want to keep accounts and users, before running remove_mariaDB_service.bat copy the current mariadb-11.3.2-winx64\bin\db folder in mariadb-11.3.2-winx64\bin\old
 7.  If your folder is moved or renamed and Mydb service won't start , open edit the my.ini file it the db folder to ist current correct path \
-eg: [mysqld] \
+eg: \ [mysqld] \
     datadir=C:/path to your folder/your folder/mariadb-11.3.2-winx64/bin/db \
     port=3306 \
     [client] \
