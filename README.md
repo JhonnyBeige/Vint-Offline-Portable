@@ -2,7 +2,7 @@
 # Vint Offline Portable
 
 This is portable offline version of the TankiX game.
-Just unzip with 7zip-zstd and run.
+Just unzip and run.
 
 ## Sources
 
@@ -12,26 +12,10 @@ Just unzip with 7zip-zstd and run.
 
 ## How to run Offline
 
-1. Unzip with [7zip-zstd](https://github.com/mcmilk/7-Zip-zstd/releases)
-2. Run start_mariaDB.bat
-3. Go in the Vint Server folder and run server_run.bat
-4. Go in the Vint Client folder and run vint.exe \
-4.1 You can drop goldbox only in matchmaking battle with this command in chat !dropBonus gold
-5. When finish playing, close the server and client windows and then run remove_mariaDB_service.bat
-
-6. If you want to keep accounts and users, before running remove_mariaDB_service.bat copy the current mariadb-11.3.2-winx64\bin\db folder in mariadb-11.3.2-winx64\bin\old
-7.  If your folder is moved or renamed and Mydb service won't start , open edit the my.ini file it the db folder to its current correct path \
-eg: \
-    [mysqld] \
-    datadir=C:/path to your folder/your folder/mariadb-11.3.2-winx64/bin/db \
-    port=3306 \
-    [client] \
-    port=3306 \
-    plugin-dir=C:/path to your folder/your folder/\mariadb-11.3.2-winx64/lib/plugin 
+1. Unzip in any folder
+2. Run Master.bat
 
 ## Multiplayer Online
 
-1. Setup [Hamachi][https://vpn.net/] or any similar software or VPN
-2. Run start_mariaDB.bat
-3. Go in the Vint Server folder and run server_run.bat
-4. Give the IP to the other player/s who only need to put it in \Vint Client\vint_Data\config\clientlocal\startup\public.yml (replace the two http://127.0.0.1:8080 strings with the IP and Port from Hamachi) and only run \Vint Client\vint.exe
+1. Setup [Hamachi](https://vpn.net/), [Radmin](https://www.radmin-vpn.com/) or any similar software or VPN
+2. Give the IP to the other player/s who only need to put it in \client\vint_Data\config\clientlocal\startup\public.yml (replace the two http://127.0.0.1:8080 strings with the IP and Port from Hamachi) and only run \client\vint.exe
